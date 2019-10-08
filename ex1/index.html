@@ -1,0 +1,35 @@
+<html>
+<head>
+<?php include 'multiplication.php';?>
+</head>
+
+<body>
+  <table >
+<style>
+td
+{
+  padding: 10px;
+}
+</style>
+
+<?php
+
+
+for($x = 0; $x <= 100; $x++)
+{
+  echo "<tr>";
+  for($j = 0; $j <= 100; $j++)
+  {
+    echo "<td>";
+echo $theArray[$x][$j];
+echo "</td>";
+  }
+  echo "</tr>";
+}
+
+
+?>
+  </table>
+</body>
+
+</html>
