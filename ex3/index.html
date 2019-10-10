@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Online Store</title>
+<script type="text/javascript" src="formChecker.js"> </script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<h1>Welcome to the T-Shirt Factory!</h1>
+  <form id="myForm" action="customerBackend.php" method="post" onsubmit="return theClick()">
+    <output name="errorUsername" id="eu"></output><br>
+    Username: <input type="text" name="username" id="un"><br>
+    <output name="errorPassword" id="ep"></output><br>
+    Password: <input type="text" name="password" id="p"><br><br>
+
+<!-- Images from:
+https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-women/default/dwcf5de64b/2004096/2004096-01-2.jpg?sw=400&sh=600&sm=fit
+https://www.cargocrew.com.au/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/c/a/cargocrew-uniform-shirt-frankie-navy-womens-1.jpg
+https://www4.assets-gap.com/webcontent/0017/602/179/cn17602179.jpg
+-->
+<img src="shirt1.jpg" id="item1" width="300px" height="400px"><br>
+<div>20$</div>
+How many do you want today?(0-100)<input type="text" name="item1quantity" value="0" id="s1" size="5px"><br>
+<output name="problemS1" id="p1"></output><br>
+<br><br>
+<img src="shirt2.jpg" id="item2" width="300px" height="400px"><br>
+<div>30$</div>
+How many do you want today?(0-100)<input type="text" name="item2quantity" value="0"  id="s2" size="5px"><br>
+<output name="problemS2" id="p2"></output><br>
+<br><br>
+<img src="shirt3.jpg" id="item2" width="300px" height="400px"><br>
+<div>25$</div>
+How many do you want today?(0-100)<input type="text" name="item3quantity" value="0" id="s3" size="5px"><br>
+<output name="problemS3" id="p3"></output><br>
+<br><br>
+Shipping options<br>
+<output name="errorShipping" id="es"></output><br>
+<input type="radio" name="shipping" value="a" id="a">Free: Free 7 day<br>
+<input type="radio" name="shipping" value="b" id="b">Fast: $5.00 three day<br>
+<input type="radio" name="shipping" value="c" id="c">Extra Fast: $50.00 over night <br>
+<br><br>
+
+<input type="submit" name="reset" value="RESET EVERYTHING" id="res" onclick="buttonIndex=0;"></input>
+<br><br>
+
+<input type="submit" name="sub" value="BUY! I AM READY" id="sub" onclick="buttonIndex=1;"></input>
+</form>
+
+
+</body>
+
+</html>
